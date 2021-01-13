@@ -23,17 +23,32 @@ body {
     line-height: 1.5;
 }
 
+.div-body {
+    padding-left: 5pt;
+    margin: auto;
+    width: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.div-usercomment {
+    padding-left: 2pt;
+    padding-right: 4pt;
+    /*margin: auto;*/
+    width: fit-content;
+}
 .copyright {    
     font-family: monospace;
 }
 
 .usercomment {
     font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
     background-color: #FFFFA8;
+    line-height: 1.2;
 }
 
-blockquote {
-    font-style: italic;
-    background-color: #FFFFA8;
-    line-height: 1;
+ul.no-bullet {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
