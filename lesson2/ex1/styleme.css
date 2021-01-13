@@ -1,5 +1,4 @@
-body {
-    background-color: #fc3153;
+body {    
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -27,4 +26,12 @@ h1:hover {
 .markblue {
     font-weight: bold;
     color:blue;
+}
+
+div {
+    padding-left: 5pt;
+    margin: auto;
+    width: fit-content;
+    background-color: #fc3153;
+    box-shadow: rgba(0, 0, 0, 0.993) 0px 5px 15px;
 }
