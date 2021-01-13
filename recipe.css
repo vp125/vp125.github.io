@@ -1,0 +1,33 @@
+h1,h2,h3,h4,h5,h6 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: left;
+    font-size: 18pt;
+}
+body {
+    font-size: 11pt;
+    color: #404040;
+    background-color: white;
+    font-family: Georgia, Garamond;
+    line-height: 1.5;
+}
+
+.copyright {    
+    font-family: monospace;
+}
+
+.usercomment {
+    font-style: italic;
+    background-color: #FFFFA8;
+}
