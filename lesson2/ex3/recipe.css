@@ -31,3 +31,9 @@ body {
     font-style: italic;
     background-color: #FFFFA8;
 }
+
+blockquote {
+    font-style: italic;
+    background-color: #FFFFA8;
+    line-height: 1;
+}
