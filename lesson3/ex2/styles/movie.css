@@ -1,0 +1,167 @@
+body {
+    background-image: url("../resources/background.png");
+    font-size: 8pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div {
+    margin:auto;
+}
+
+#banner {
+    background-image: url("../resources/bannerbg.png");
+    background-repeat: repeat-x;
+}
+
+#img_banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 3px #999999;
+    text-align: center;
+}
+
+.div_overall {
+    width: 800px;
+    margin: auto;
+    border: 4px solid gray;
+    border-radius: 20px;
+}
+
+.left_section {
+    width: 550px;
+    margin-left: 0;
+    float:left;
+}
+#div_rottenbig {
+    background-image: url(../resources/rbg.png);
+    background-repeat: repeat-x;
+    border-top-left-radius: 20px;
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+    vertical-align: top;
+}
+#img_rottenbig {
+    border-top-left-radius: 15px;    
+}
+
+.div_two_column {    
+    column-count: 2;
+    padding: 2%;
+    vertical-align: top;
+}
+
+.quotebox {
+    font-weight: bold;
+    font-size: 8pt;
+    background-color: #E8DC9B;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 8px;    
+}
+
+.right_section {
+    width: 250px;
+    background-color: #A2B964;
+    margin-left: 550px;
+    border-top-right-radius: 15px;
+
+}
+
+#img_overview {
+    border-top-right-radius: 15px;
+}
+
+#dl_filminfo {
+    padding: 10pt;
+    font-size: 8pt;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.dt_filmterm {
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+#ul_filminfolink {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#id_review_bar {
+    clear: left;
+    margin-top: 0;
+    background-color: #A2B964;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+}
+
+#id_span_review_percent{
+    position: absolute;    
+}
+
+#id_validator {
+    position: fixed ;
+    bottom: 0;
+    right: 0;
+}
+/*
+Below the main heading is the page's overall content area, with an overall 33% rating for the film, several critics'
+reviews, and an overview of the film at right. Taken together this content occupies 800px in width and is centered
+horizontally within the page. If the page resizes horizontally, this 800px section should move dynamically so that it
+remains centered horizontally on the page. This overall section has a 4px gray solid border with a 20px round radius
+and should be sized large enough to contain all of its contents. 
+
+(Hint: See textbook section 4.3 on making contents fit.)
+In the overall area there is a 550px-wide left section for the "rotten" 33% rating and the critics' reviews of the film.
+The section is topped by a smaller section containing a large "rotten" image (rottenbig.png), vertically aligned to be
+even with the bottom of the text around it. Behind this the image rbg.png repeats horizontally across the entire
+length of the section. Each of these images is 83px tall. This is followed by the 33% overall rating for the film,
+which is shown in a 48pt red bold font.
+
+Below the 33% overall rating, there are two columns of reviews. The columns each occupy 47% of the width of
+the overall left-center section of the page. There is a horizontal spacing of 2% between the columns and
+neighboring content. (Hint: See textbook section 4.3.4 on multi-column layouts, but avoid the new column-* CSS3 properties.)
+
+Each review is a box with a quote about the movie, in bold 8pt font. The quote box has a background color of
+#E8DC9B, and a gray border, 2px thick with a 10px round radius. 8px separate the quote box's content from its
+border. 
+
+Each box has an icon (fresh.gif or rotten.gif) for whether the reviewer liked or disliked the movie on the
+left side of the quote box, with 5px separating it from text to its right. Text wraps around the images as needed.
+The reviewer's personal information follows under the quote box, including: the reviewer's name; and the publication
+in italic. A reviewer icon (critic.gif) is shown to the left of the text, with 5px of horizontal space separating it from
+the text. 
+
+There is 20pt of vertical space between reviews. (Hint: Paragraphs in movie reviews should be made large enough to
+contain all their content, including any floating content. See textbook section 4.3.3 on making contents fit into a container.)
+The top eight reviews should be as shown, but you should change the last two to hold any text that you like.
+
+To the right of the critics' reviews is a General Overview section of the page with a list of information about the
+movie, with a background color of #A2B964. This section is 250px wide, with 10pt between the edge of the section 
+and the text of the list. Its text appears in an 8pt font of Arial or any sans-serif font available on the system.
+
+You may assume that the general overview section will always be taller than the section of reviews to its left.
+The section includes a definition list (using dl, dt, and dd elements) about the movie such as its stars and director.
+Each term is bolded and has 10pt of vertical separation between it and the element that precedes it. 
+
+The bottom of this section contains a list of links about the movie. The list should be shown without bullets or indentation.
+
+Below the reviews is a bar of centered text indicating reviews "(1-10) of 88", with a background color of #A2B964.
+It is placed directly next to surrounding content. 5px separate the edge of its text and the element's own outer edge.
+
+The page's bottom right corner has links to the W3C validators. These images should remain fixed in the page's
+bottom-right corner, even after scrolling. The images should appear as 50% opaque, halfway transparent.
+All other style elements on the page are subject to the preference of the web browser.
+*/
