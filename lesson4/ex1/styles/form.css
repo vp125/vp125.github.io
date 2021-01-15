@@ -1,0 +1,43 @@
+
+
+.overall {
+    padding-top: 40px;
+    width: 800px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;    
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 3px gray;
+    overflow: auto;
+    
+}
+
+.infoform {
+    width: 600px;
+    margin: auto; 
+}
+
+input[type="text"] {
+    height: 30px;
+    /*display: block;*/
+}
+
+input[type="submit"] {
+    height: 30px;
+    width: 200px;
+    margin: auto;
+    background-color: blue;
+    color: white;
+}
+.regionform {
+    float: left;
+    column-count: 3;
+}
+
+#id_selectstate {
+    width: 194px;
+    height: 36px;
+}
+
+
