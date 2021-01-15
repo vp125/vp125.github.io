@@ -8,34 +8,34 @@
     <form>
         <div class="overall">
             <div class="infoform">
-                <label>First Name</label>
-                <input type="text" name="firstname" size="80" required><br><br>
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" size="80" required><br><br>
             
-                <label>Middle Name (optional)</label><br>
-                <input type="text" name="middlename" size="80"><br><br>
+                <label for="middlename">Middle Name (optional)</label><br>
+                <input type="text" id="middlename" name="middlename" size="80"><br><br>
             
-                <label>Last Name</label><br>
-                <input type="text" name="lastname" size="80" required><br><br>
+                <label for="lastname">Last Name</label><br>
+                <input type="text" id="lastname" name="lastname" size="80" required><br><br>
 
-                <label>SSN</label><br>
-                <input type="text" name="ssn" size="80" required pattern="^\d{3}-\d{2}-\d{4}$" placeholder="123-45-6789"><br><br>
+                <label for="ssn">SSN</label><br>
+                <input type="text" id="ssn" name="ssn" size="80" required pattern="^\d{3}-?\d{2}-?\d{4}$" placeholder="123-45-6789"><br><br>
 
-                <label>Credit Card</label><br>
-                <input type="text" name="creditcard" size="80" required pattern="^\d{9}|\d{13}$"><br><br>
+                <label for="creditcard">Credit Card</label><br>
+                <input type="text" id="creditcard" name="creditcard" size="80" required pattern="(^\d{9}$|\d{13}$)"><br><br>
 
                 <label>Suffix (Optional)</label><br><br>
 
-                <label>Residental address line 1</label><br>
-                <input type="text" name="addressline1" size="80" required><br><br>
+                <label for="addressline1">Residental address line 1</label><br>
+                <input type="text" id="addressline1" name="addressline1" size="80" required><br><br>
 
                 <div class="regionform">
                     <div>
-                        <label>City</label><br>
-                        <input type="text" name="addressline1" size="20" required><br><br>
+                        <label for="city">City</label><br>
+                        <input type="text" id="city" name="addressline1" size="20" required><br><br>
                     </div>
                 
                     <div>
-                        <label>State</label><br>
+                        <label for="id_selectstate">State</label><br>
                         <select id="id_selectstate" name="selectstate" required>
                             <option>Texas</option>
                             <option>Iowa</option>
@@ -47,22 +47,22 @@
                     </div>
 
                     <div>
-                        <label>Zip code</label><br>
-                        <input type="text" name="zipcode" size="20" required pattern="^\d{5}$"><br><br>
+                        <label for="zipcode">Zip code</label><br>
+                        <input type="text" id="zipcode" name="zipcode" size="20" required pattern="^\d{5}$"><br><br>
                     </div>
                 </div>
-                <label>Primary phone number</label><br>
-                <input type="text" name="phonenumber" size="80" required pattern="^\(\d{3}\) \d{3}-\d{4}$" placeholder="(123) 456-7899"><br><br>
+                <label for="phonenumber">Primary phone number</label><br>
+                <input type="text" id="phonenumber" name="phonenumber" size="80" required pattern="(^\d{10}$|^\(\d{3}\) \d{3}-\d{4}$)" placeholder="(123) 456-7899"><br><br>
 
-                <input type="radio" name="phone" value="mobilephone" checked/> Mobile Phone
-                <input type="radio" name="phone" value="homephone"/> Home Phone
+                <label><input type="radio" name="phone" value="mobilephone" checked/> Mobile Phone</label>
+                <label><input type="radio" name="phone" value="homephone"/> Home Phone</label>
                 <br><br>
 
-                <label>Email address</label><br>
-                <input type="text" name="emailaddress" size="80" required><br><br>
+                <label for="emailaddress">Email address</label><br>
+                <input type="text" id="emailaddress" name="emailaddress" size="80" required><br><br>
 
-                <label>Date of birth</label><br>
-                <input type="text" name="dob" size="80" required pattern="^(0[1-9]|1[1-2])-(0[1-9]|[12][0-9]|3[01])-(19\d{2}|2000)"><br><br>
+                <label for="dob">Date of birth</label><br>
+                <input type="text" id="dob" name="dob" size="80" required pattern="^(0[1-9]|1[1-2])-(0[1-9]|[12][0-9]|3[01])-(19\d{2}|2000)"><br><br>
 
                 <input type="submit" name="submit"><br><br>
             </div>
