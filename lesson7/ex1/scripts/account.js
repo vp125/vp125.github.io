@@ -1,51 +1,61 @@
-var accountInfoList = [];
 
 window.onload = function() {
     let btn = document.getElementById("btncreateaccount");
-    btn.onclick = createAccount;
+    btn.onclick = guiHandler.btnCreateOnclickHandler;
 }
 
-function createAccount() {
-    let accName = document.getElementById("txtaccountname").value;
-    let accDeposit = document.getElementById("txtdeposit").value;
-    let acc = makeAccount.createAccount(accName,accDeposit*1);
-    accountInfoList.push(acc);
-    displayAccounts();
-}
-
-function displayAccounts(){
-    let txtList = document.getElementById("txtareaaccounts");
-    let val = accountInfoList[accountInfoList.length-1];
-    let accName = val.getAccountName();
-    let accBalance = val.getAccountBalance();
-    txtList.value += "Account name:\t" + accName + "\t" + "Balance:\t" + accBalance + "\n";    
-}
-var makeAccount = function() {    
-    const CreateAccount = function(name, deposit) {
-        let accName = name;
-        let accBalance = deposit;
-        const getAccName = function() {
-            return accName;
-        }
-        const getAccBalance = function() {
-            return accBalance;
-        }
-        const addAccDeposit = function(deposit){
-            if(deposit > 0){
-                accBalance += deposit;
+var guiHandler = function () {
+    "use strict";
+    let accountInfoList = [];
+    let accountFactory = function() {    
+        "use strict";
+        const CreateAccount = function(name, deposit) {
+            let accName = name;
+            let accBalance = deposit;
+            const getAccName = function() {
+                return accName;
             }
-            else{
-                alert("Deposit must be greater than 0!");
-            } 
+            const getAccBalance = function() {
+                return accBalance;
+            }
+            const addAccDeposit = function(deposit){
+                if(deposit > 0){
+                    accBalance += deposit;
+                }
+                else{
+                    alert("Deposit must be greater than 0!");
+                } 
+            }
+            return {        
+                getAccountName: getAccName,
+                getAccountBalance: getAccBalance,
+                addAccountDeposit: addAccDeposit           
+            }
         }
-        return {        
-            getAccountName: getAccName,
-            getAccountBalance: getAccBalance,
-            addAccountDeposit: addAccDeposit           
-        }
+    
+        return {
+            createAccount : CreateAccount
+        };
+    }();
+
+    const createAccount = function() {
+        let accName = document.getElementById("txtaccountname").value;
+        let accDeposit = document.getElementById("txtdeposit").value;
+        let acc = accountFactory.createAccount(accName,accDeposit*1);
+        accountInfoList.push(acc);
+        displayAccounts();
+    }
+
+    const displayAccounts = function(){
+        let txtList = document.getElementById("txtareaaccounts");
+        let val = accountInfoList[accountInfoList.length-1];
+        let accName = val.getAccountName();
+        let accBalance = val.getAccountBalance();
+        txtList.value += "Account name:\t" + accName + "\t" + "Balance:\t" + accBalance + "\n";    
     }
 
     return {
-        createAccount : CreateAccount
+        btnCreateOnclickHandler : createAccount
     };
 }();
+
