@@ -1,0 +1,56 @@
+div#container {    
+    width: 50%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;        
+}
+
+div#user_input {
+    padding: 5px;
+    border-radius: 10px;
+}
+#user_input {
+    background-color: greenyellow;    
+}
+
+#user_info {
+    margin-top: 20px;
+    border: 1px solid;
+    box-shadow: 1px 2px gray;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+#user_posts {
+    margin-top: 20px;
+    border: 1px solid;
+    box-shadow: 1px 2px gray;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+#post_title {
+    font-size: 1.2em;
+}
+
+#post_body {
+    font-size: 1.1em;
+}
+
+div.post_body_container {
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+div.post_comment {
+    margin-top: 5px;
+    background-color: palegoldenrod;
+    border-radius: 20px 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
