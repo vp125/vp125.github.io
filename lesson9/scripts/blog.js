@@ -1,7 +1,7 @@
 let urlToDo = 'https://jsonplaceholder.typicode.com/todos/';
-let urlUser = 'http://jsonplaceholder.typicode.com/users/';
-let urlPost = 'http://jsonplaceholder.typicode.com/posts';
-let urlComment = 'http://jsonplaceholder.typicode.com/comments'
+let urlUser = 'https://jsonplaceholder.typicode.com/users/';
+let urlPost = 'https://jsonplaceholder.typicode.com/posts';
+let urlComment = 'https://jsonplaceholder.typicode.com/comments'
 
 window.onload = function(){
     let btnGo = document.getElementById("btn_go");
